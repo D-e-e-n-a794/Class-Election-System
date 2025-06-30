@@ -1,0 +1,100 @@
+.root {
+    -fx-background-color: #0b1d3b;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+/* Headings */
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+/* Title labels (like Election System heading) */
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* Text and password fields */
+.text-field,
+.password-field {
+    -fx-background-color: #112544;
+    -fx-text-fill: white;
+    -fx-border-color: #334d7a;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 6 10;
+    -fx-font-size: 14px;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: linear-gradient(to bottom right, #1c3b6f, #295c9c);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-cursor: hand;
+    -fx-padding: 8 20;
+    -fx-effect: dropshadow(gaussian, #000000aa, 4, 0, 0, 2);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for button */
+.button:hover {
+    -fx-background-color: #3b75c3;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Radio buttons */
+.radio-button {
+    -fx-text-fill: white;
+}
+
+/* Radio button selected */
+.radio-button:selected .radio {
+    -fx-mark-color: #66ccff;
+}
+
+/* Combo box */
+.combo-box {
+    -fx-background-color: #112544;
+    -fx-border-color: #334d7a;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #112544;
+    -fx-text-fill: white;
+}
+
+/* Table styling */
+.table-view {
+    -fx-background-color: #112544;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: #1c3b6f;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+/* Error label */
+#errorLabel {
+    -fx-text-fill: #ff4d4d;
+    -fx-font-size: 13px;
+}
+
+/* Optional: Background image */
+.background-pane {
+    -fx-background-image: url("/style/bg.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+

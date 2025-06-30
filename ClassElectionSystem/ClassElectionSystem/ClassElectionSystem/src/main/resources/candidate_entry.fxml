@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.classElection.controller.CandidateEntryController"
+            prefHeight="300.0" prefWidth="400.0"
+            style="-fx-background-color: white;">
+
+    <children>
+
+        <Label layoutX="130" layoutY="20" text="Candidate Entry"
+               style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: black;" />
+
+        <Label layoutX="50" layoutY="60" text="Name:"
+               style="-fx-text-fill: black; -fx-font-weight: bold;" />
+        <TextField fx:id="candidateNameField" layoutX="150" layoutY="60"
+                   style="-fx-background-color: white; -fx-border-color: #ccc; -fx-border-radius: 5; -fx-background-radius: 5; -fx-text-fill: black;" />
+
+        <Label layoutX="50" layoutY="100" text="Party:"
+               style="-fx-text-fill: black; -fx-font-weight: bold;" />
+        <TextField fx:id="partyField" layoutX="150" layoutY="100"
+                   style="-fx-background-color: white; -fx-border-color: #ccc; -fx-border-radius: 5; -fx-background-radius: 5; -fx-text-fill: black;" />
+
+        <Button fx:id="addCandidateBtn" layoutX="150" layoutY="140"
+                text="Add Candidate" onAction="#handleAddCandidate"
+                style="-fx-background-color: green; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" />
+
+        <ListView fx:id="candidateListView" layoutX="50" layoutY="180"
+                  prefWidth="300" prefHeight="80"
+                  style="-fx-border-color: #ccc; -fx-border-radius: 5; -fx-background-radius: 5;" />
+
+        <Button fx:id="proceedBtn" layoutX="150" layoutY="270"
+                text="Proceed" onAction="#handleProceed"
+                style="-fx-background-color: green; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" />
+
+    </children>
+</AnchorPane>

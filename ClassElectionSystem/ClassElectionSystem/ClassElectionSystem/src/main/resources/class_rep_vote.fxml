@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15" alignment="CENTER"
+      xmlns="http://javafx.com/javafx/20"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.classElection.controller.ClassRepVoteController"
+      style="-fx-padding: 30; -fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10;">
+
+    <Label text="Vote for Class Representative"
+           style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #1a1a1a;" />
+
+    <ComboBox fx:id="candidateComboBox" promptText="Select Class Representative Candidate"
+              prefWidth="300"
+              style="-fx-background-color: #f0f0f0; -fx-text-fill: black; -fx-font-size: 14px; -fx-border-color: #ccc;" />
+
+    <TextField fx:id="regNoField" promptText="Enter Your Registration Number"
+               prefWidth="300"
+               style="-fx-background-color: #f0f0f0; -fx-text-fill: black; -fx-font-size: 14px; -fx-border-color: #ccc;" />
+
+    <Button text="Vote" onAction="#handleVote"
+            style="-fx-background-color: green; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-background-radius: 6;" />
+
+    <Button text="Back" onAction="#handleBack"
+            style="-fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-background-radius: 6;" />
+
+    <Button text="Exit" onAction="#handleExit"
+            style="-fx-background-color: #000000; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-background-radius: 6;" />
+
+    <Label fx:id="statusLabel"
+           style="-fx-text-fill: red; -fx-font-size: 14px;" />
+
+</VBox>

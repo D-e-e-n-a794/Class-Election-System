@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/20"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.classElection.controller.ElectionTypeController"
+            prefHeight="300.0" prefWidth="500.0"
+            style="-fx-background-color: white;">
+
+    <VBox alignment="CENTER" spacing="30"
+          layoutX="50" layoutY="40">
+        
+        <Label text="Select Election Type"
+               style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #1a1a1a;" />
+
+        <HBox spacing="40" alignment="CENTER">
+            <Button fx:id="classRepBtn" text="Class Representative" onAction="#handleClassRep"
+                    prefWidth="180"
+                    style="-fx-background-color: green; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-background-radius: 6;" />
+
+            <Button fx:id="presidentBtn" text="President" onAction="#handlePresident"
+                    prefWidth="180"
+                    style="-fx-background-color: green; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-background-radius: 6;" />
+        </HBox>
+
+        <Button fx:id="backBtn" text="Back" onAction="#handleBack"
+                prefWidth="150"
+                style="-fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-background-radius: 6;" />
+    </VBox>
+</AnchorPane>

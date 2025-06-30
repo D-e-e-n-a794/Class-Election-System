@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.classElection.controller.VotingController"
+            prefHeight="300.0" prefWidth="400.0"
+            style="-fx-background-color: #121212;">
+
+    <children>
+        <Label layoutX="130" layoutY="20" text="Voting Page"
+               style="-fx-font-size: 20px; -fx-text-fill: white; -fx-font-weight: bold;" />
+
+        <ListView fx:id="candidatesListView" layoutX="50" layoutY="60" prefWidth="300" prefHeight="180"
+                  style="-fx-background-color: #1e1e1e; -fx-control-inner-background: #1e1e1e; -fx-text-fill: white;" />
+
+        <Button fx:id="voteBtn" layoutX="150" layoutY="250" text="Vote" onAction="#handleVote"
+                style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-font-weight: bold;" />
+    </children>
+</AnchorPane>
